@@ -1,0 +1,19 @@
+app:
+  name: bot-visite-v2
+  services:
+    - name: bot
+      instance_type: free
+      git:
+        repository: git@github.com:Harymir/bot_visite_v2.git
+        branch: main
+      env:
+        - name: TELEGRAM_API_ID
+          value: "{{TELEGRAM_API_ID}}"
+        - name: TELEGRAM_API_HASH
+          value: "{{TELEGRAM_API_HASH}}"
+        - name: TELEGRAM_PHONE
+          value: "{{TELEGRAM_PHONE}}"
+      ports:
+        - port: 8080
+      healthcheck:
+        port: 8080
