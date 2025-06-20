@@ -1,0 +1,29 @@
+{
+  "name": "bot-visite-v2",
+  "description": "Bot Telegram pour les visites automatisées",
+  "env": {
+    "TELEGRAM_API_ID": {
+      "description": "Votre Telegram API ID",
+      "required": true
+    },
+    "TELEGRAM_API_HASH": {
+      "description": "Votre Telegram API Hash",
+      "required": true
+    },
+    "TELEGRAM_PHONE": {
+      "description": "Votre numéro de téléphone Telegram",
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
