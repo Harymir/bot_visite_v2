@@ -1,0 +1,13 @@
+services:
+  - type: worker
+    name: bot-visite-v2
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python koyeb_start.py
+    envVars:
+      - key: TELEGRAM_API_ID
+        sync: false
+      - key: TELEGRAM_API_HASH
+        sync: false
+      - key: TELEGRAM_PHONE
+        sync: false
