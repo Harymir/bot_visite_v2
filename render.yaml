@@ -1,9 +1,9 @@
 services:
-  - type: worker
+  - type: web
     name: bot-visite-v2
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python koyeb_start.py
+    startCommand: python render_start.py
     envVars:
       - key: TELEGRAM_API_ID
         sync: false
@@ -11,3 +11,6 @@ services:
         sync: false
       - key: TELEGRAM_PHONE
         sync: false
+    healthCheckPath: /status
+    healthCheckTimeout: 100
+    autoDeploy: true
