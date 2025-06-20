@@ -3,7 +3,7 @@ services:
     name: bot-visite-v2
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python render_start.py
+    startCommand: python render_unified.py
     envVars:
       - key: TELEGRAM_API_ID
         sync: false
@@ -14,3 +14,6 @@ services:
     healthCheckPath: /status
     healthCheckTimeout: 100
     autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 8080
