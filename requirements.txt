@@ -1,5 +1,7 @@
-telethon
-python-dotenv
-asyncio
-urllib3
-logging
+telethon>=1.28.5
+python-dotenv>=1.0.0
+asyncio>=3.4.3
+urllib3>=2.0.3
+aiohttp>=3.8.4
+cryptography>=41.0.1
+python-dateutil>=2.8.2
