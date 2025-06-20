@@ -6,13 +6,13 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends     git     && rm -rf /var/lib/apt/lists/*
 
 # Copier les fichiers du projet
-COPY requirements.txt .
-COPY bot_visite.py .
-COPY .env .
-COPY install.sh .
+COPY . .
 
 # Installer les dépendances Python
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Rendre le script de démarrage exécutable
+RUN chmod +x koyeb_start.py
+
 # Commande pour lancer le bot
-CMD ["python", "bot_visite.py"]
+CMD ["python", "koyeb_start.py"]
