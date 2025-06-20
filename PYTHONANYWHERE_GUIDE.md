@@ -64,3 +64,18 @@ python pa_setup.py
    pkill -f worker_config.py
    bash start_bot.sh
    ```
+
+## Gestion des cycles du bot
+
+Le worker est configuré pour:
+- Exécuter des cycles de 14 minutes
+- Faire une pause de 1 minute entre les cycles
+- Gérer automatiquement la reconnexion
+- Maintenir la session Telegram active
+- Logger toutes les activités
+
+Pour voir les cycles en action:
+```bash
+tail -f bot.log
+```
+
