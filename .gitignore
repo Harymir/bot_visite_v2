@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+venv/
+build/
+dist/
+eggs/
+*.egg-info/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Telegram session
+*.session
+*.session-journal
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
