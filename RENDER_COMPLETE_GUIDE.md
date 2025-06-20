@@ -343,3 +343,8 @@ footer {
 - Le bot peut être inactif après 15min
 - Utilisez un plan payant pour 24/7
 - Sauvegardez vos credentials
+
+IMPORTANT: Ajoutez ces variables d'environnement supplémentaires dans Render:
+- TELEGRAM_CODE : Code de vérification (à mettre après le premier déploiement)
+- TELEGRAM_2FA_PASSWORD : Mot de passe 2FA (si activé)
+
