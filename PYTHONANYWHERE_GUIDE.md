@@ -79,3 +79,26 @@ Pour voir les cycles en action:
 tail -f bot.log
 ```
 
+
+## Surveillance du Bot
+
+Pour surveiller le bot, utilisez le script monitor.py:
+
+1. Vérification ponctuelle:
+   ```bash
+   python monitor.py
+   ```
+
+2. Surveillance continue:
+   ```bash
+   python monitor.py --continuous
+   ```
+
+Le moniteur vérifie:
+- État actuel du bot
+- Nombre d'erreurs récentes
+- Derniers logs
+- Inactivité prolongée
+
+En cas d'inactivité, le moniteur suggère des commandes de dépannage.
+
